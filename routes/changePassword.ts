@@ -14,7 +14,7 @@ export function changePassword () {
     const currentPassword = query.current as string
     const newPassword = query.new as string
     const newPasswordInString = newPassword?.toString()
-    const repeatPassword = query.repeat
+    const repeatPassword = ``
 
     if (!newPassword || newPassword === 'undefined') {
       res.status(401).send(res.__('Password cannot be empty.'))
